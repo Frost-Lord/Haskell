@@ -1,5 +1,5 @@
 -- Import the necessary modules
-import random
+import System.Random
 
 -- Define a list of quotes to choose from
 quotes :: [String]
@@ -13,11 +13,14 @@ quotes = [
 
 -- Define a function that chooses a random quote from the list
 chooseQuote :: IO String
-chooseQuote = randomRIO (0, length myList - 1)
+chooseQuote = do
+    i <- randomRIO (0, length quotes - 1)
+    return i
+
+
 
 -- Define the main function
 main :: IO ()
 main = do
     quote <- chooseQuote
-    let randomElement = quotes !! i
-    putStrLn randomElement
+    putStrLn (quotes !! quote)

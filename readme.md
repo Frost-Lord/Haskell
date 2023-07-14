@@ -1,6 +1,6 @@
-# Haskell Project Guide
+# Haskell Concepts Demonstrations
 
-This repository contains several example projects illustrating key concepts and functionalities in Haskell.
+This repository serves as a comprehensive guide to several fundamental concepts in Haskell. Each project within this repository elucidates a specific topic in Haskell, providing a succinct and practical implementation to aid understanding.
 
 ## Project Summaries:
 

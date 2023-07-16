@@ -1,0 +1,9 @@
+ghc Main.hs && Main.exe
+
+cabal run
+
+Resetting Environment: If none of the above steps work, you could try resetting your Haskell environment completely. This involves removing the GHC and Cabal-related directories. Be cautious as this will remove all your installed packages, so it's recommended to back up any important projects first. The GHC-related directories are typically located at:
+
+Unix-like systems: ~/.ghc and ~/.cabal
+Windows: C:\Users\<username>\AppData\Roaming\ghc and C:\Users\<username>\AppData\Roaming\cabal
+After removing these directories, you can reinstall Haskell and the necessary packages.
